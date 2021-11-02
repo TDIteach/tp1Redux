@@ -5,6 +5,7 @@ import {
   increase,
   decrease,
   reset,
+  increaseOdd
 } from "../redux"
 
 export const CounterNav = () => {
