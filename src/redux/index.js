@@ -77,10 +77,14 @@ const counter = (state = initState, action) => {
         count: 0,
       }
       case types.INCREASEODD:
-        return {
+        
+        if(state.count%2===1) 
+        return{
           ...state,
-          count: state.count + 2,
+          count: state.count + 1,
         }
+        else
+        return state;
     
     default:
       return state
